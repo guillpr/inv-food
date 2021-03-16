@@ -1,0 +1,8 @@
+.labTypeProd{
+    font-weight: bold;
+}
+.btnAjoutProduit{
+    background-color:black;
+    color:white;
+    border:solid grey;
+}

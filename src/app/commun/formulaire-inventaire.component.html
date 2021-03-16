@@ -1,0 +1,26 @@
+<form [formGroup]="formulaire">
+<div class="row mt-4" *ngIf="this.facadeService.listeType">
+    <div class="col-2"><label class="labTypeProd">Type de produit</label></div>
+    <div class="col-3">
+        <select name="produits" id="produits" formControlName="typeProduit">
+            <option selected value="">--Sélectionnez--</option>
+            <option *ngFor="let r of this.facadeService.listeType;let i=index"  [value]="r.nom">
+            {{r.nom}}
+            </option>
+            <!-- <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option> -->
+          </select>
+    </div>
+    <div class="col-1 btnPlus"><button 
+        class="btn btn-success" 
+        (click)="ajouterProduit()" 
+         matTooltip="Ajouter produits"
+         matTooltipPosition="above" >+</button>
+        </div>
+    <div class="col-2"><input formControlName="nouveauProduit">
+    </div>
+</div>
+
+
+</form>

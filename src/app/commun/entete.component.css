@@ -1,0 +1,12 @@
+.fondNoir{
+    background-color: black;
+    height: 75px;
+    color:white;
+    text-align: center;
+    border: solid gray;
+}
+.texteEntete{
+    margin-top: 18px;
+    font-size: 25px;
+    font-family:fantasy;
+}
